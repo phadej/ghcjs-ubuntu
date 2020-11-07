@@ -1,0 +1,5 @@
+#!/bin/bash
+topdir="@TOPDIR@"
+executablename="$topdir/bin/hsc2hs-ghcjs"
+PATH=/opt/ghc/8.4.4/bin:$PATH
+exec "$executablename" ${1+"$@"}

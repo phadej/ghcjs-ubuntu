@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	./boot-bin.sh $(CURDIR)/debian/ghcjs-8.6
+
+override_dh_clean:
+	rm -rf dist dist-newstyle .ghc.environment.x86_64-linux-8.6.5
+	dh_clean

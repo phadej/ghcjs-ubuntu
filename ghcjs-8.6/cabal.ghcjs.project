@@ -1,0 +1,6 @@
+with-compiler:       ghc-8.6.5
+packages:            ./ghcjs-8.6.0.1/ghcjs.cabal
+packages:            upstream/*.tar.gz
+tests:               False
+benchmarks:          False
+active-repositories: ghcjs-dependencies

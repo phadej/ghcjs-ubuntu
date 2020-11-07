@@ -1,0 +1,4 @@
+#!/bin/bash
+topdir="@TOPDIR@"
+executablename="$topdir/bin/haddock-ghcjs"
+exec "$executablename" -B"$topdir" -l"$topdir" ${1+"$@"}

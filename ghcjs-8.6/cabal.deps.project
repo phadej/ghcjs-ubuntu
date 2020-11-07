@@ -1,0 +1,2 @@
+packages: ghcjs-8.6.0.1/*.cabal
+packages: upstream/*.tar.gz

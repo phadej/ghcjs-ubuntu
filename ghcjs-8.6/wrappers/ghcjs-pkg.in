@@ -1,0 +1,4 @@
+#!/bin/bash
+topdir="@TOPDIR@"
+executablename="$topdir/bin/ghcjs-pkg"
+exec "$executablename" --global-package-db "$topdir/package.conf.d" ${1+"$@"}

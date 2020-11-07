@@ -1,0 +1,14 @@
+remote-repo-cache: /tmp/cabal/packages
+logs-dir:          /tmp/cabal/logs
+world-file:        /tmp/cabal/world
+store-dir:         /tmp/cabal/store
+extra-prog-path:   /tmp/cabal/bin
+symlink-bindir:    /tmp/cabal/bin
+build-summary:     /tmp/cabal/logs/build.log
+jobs:              $ncpus
+
+repository ghcjs-dependencies
+  url: file+noindex://@GHCJSDEPREPO@
+
+install-dirs user
+  prefix: /tmp/cabal

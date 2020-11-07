@@ -1,0 +1,12 @@
+Source: ghcjs-8.6
+Section: universe/haskell
+Priority: extra
+Maintainer: Herbert Valerio Riedel <hvr@gnu.org>
+Build-Depends: debhelper (>= 9), zlib1g-dev, libgmp-dev, libtinfo-dev, libncurses5-dev, pkg-config, ghc-8.6.5, nodejs (>= 8.10), npm, cabal-install-3.4, cabal-install-3.2
+Standards-Version: 3.9.4
+Homepage: https://github.com/ghcjs/ghcjs
+
+Package: ghcjs-8.6
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, nodejs, ghc-8.6.5
+Description: GHCJS
