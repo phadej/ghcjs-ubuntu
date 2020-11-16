@@ -1,3 +1,11 @@
+ghcjs-8.6 (8.6.0.1+git20201116.c3c6b32~18.04) bionic; urgency=medium
+
+  * Apply https://github.com/ghcjs/ghcjs/pull/788
+
+  * Build in /tmp
+
+ -- Oleg Grenrus <phadej@polinukli>  Mon, 16 Nov 2020 23:45:55 +0200
+
 ghcjs-8.6 (8.6.0.1+git20201107~18.04) bionic; urgency=low
 
   * Initial release

@@ -12,7 +12,9 @@ docker run --rm -ti --entrypoint=/bin/bash phadej/ghc:8.6.5-bionic
 ```
 
 ```bash
-cd
+mkdir /tmp/ghcjs-build
+cd /tmp/ghcjs-build
+
 apt-get update
 apt-get install -y debhelper cabal-install-3.4 cabal-install-3.2 nodejs nodejs-dev npm node-gyp libssl1.0-dev
 
@@ -25,6 +27,24 @@ time dpkg-buildpackage -i -us -uc -b
 
 References:
 - https://askubuntu.com/questions/1088662/npm-depends-node-gyp-0-10-9-but-it-is-not-going-to-be-installed
+
+### Focal
+
+```bash
+docker run --rm -ti --entrypoint=/bin/bash phadej/ghc:8.6.5-focal
+```
+
+```bash
+cd
+apt-get update
+apt-get install -y debhelper cabal-install-3.4 cabal-install-3.2 nodejs npm
+
+git clone https://github.com/phadej/ghcjs-ubuntu.git
+cd ghcjs-ubuntu
+
+cd ghcjs-8.6
+time dpkg-buildpackage -i -us -uc -b
+```
 
 ## Steps to package GHCJS
 
